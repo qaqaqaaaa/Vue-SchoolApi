@@ -3,15 +3,29 @@
         <MenuItem to='/' name='/'>
               <Icon type="ios-navigate"></Icon>
               <span>学生信息</span>
-          </MenuItem>
-      <MenuItem name="/score" to='/score'>
+        </MenuItem>
+        <MenuItem name="/score" to='/score'>
               <Icon type="ios-navigate"></Icon>
               <span>学生成绩</span>
-          </MenuItem>
-       <MenuItem name="/class" to='/class'>
+        </MenuItem>
+        <MenuItem name="/class" to='/class'>
               <Icon type="ios-navigate"></Icon>
               <span>学生课表</span>
-          </MenuItem>
+        </MenuItem>
+            <MenuItem name="/exam" to='/exam'>
+              <Icon type="ios-navigate"></Icon>
+              <span>考试安排</span>
+        </MenuItem>
+        <Submenu name="OtherFunction">
+            <template slot="title">
+                <Icon type="ios-analytics"></Icon>
+                其他功能
+            </template>
+            <Menu-item name="/other_info" to='/other_info'>查询学生信息</Menu-item>
+            <Menu-item name="/other_score" to='/other_score'>查询学生成绩</Menu-item>
+            <Menu-item name="/other_class" to='/other_class'>查询学生课表</Menu-item>
+            <Menu-item name="/other_exam" to='/other_exam'>查询考试安排</Menu-item>
+        </Submenu>
         
       </Menu>
 </template>

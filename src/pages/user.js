@@ -58,9 +58,56 @@ var router = new VueRouter({
             menu: menu,
             content: () => import("@/components/contents/score.vue")
         },
-    },
+      },
+      {
+        name: "exam",
+        path: "/exam",
+        components: {
+            menu: menu,
+            content: () => import("@/components/contents/exam.vue")
+        },
+      },
 
-      ]
+      {
+        name: "other_info",
+        path: "/other_info",
+        components: {
+            menu: menu,
+            content: () => import("@/components/contents/other_function/query_info.vue")
+        },
+      },
+
+      {
+        name: "other_class",
+        path: "/other_class",
+        components: {
+            menu: menu,
+            content: () => import("@/components/contents/other_function/query_class.vue")
+        },
+      },
+
+      {
+        name: "other_score",
+        path: "/other_score",
+        components: {
+            menu: menu,
+            content: () => import("@/components/contents/other_function/query_score.vue")
+        },
+      },
+
+      {
+        name: "other_exam",
+        path: "/other_exam",
+        components: {
+            menu: menu,
+            content: () => import("@/components/contents/other_function/query_exam.vue")
+        },
+      },
+
+    
+    
+    
+    ]
 })
   
 
